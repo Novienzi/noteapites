@@ -1,0 +1,23 @@
+{
+  "name": "notes-api",
+  "version": "0.1.0",
+  "description": "This is an API for managing notes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Vien",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.6",
+    "readdirp": "^3.5.0",
+    "sequelize": "^6.3.5",
+    "uuid": "^8.3.1"
+  }
+}

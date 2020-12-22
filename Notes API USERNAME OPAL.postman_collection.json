@@ -1,0 +1,667 @@
+{
+	"info": {
+		"_postman_id": "2b0cdefb-7709-4007-83bf-0613567455fe",
+		"name": "Notes API USERNAME OPAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"Opal62\",\n    \"password\" : \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login opal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"Opal62\",\n    \"password\" : \"1234\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "570"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23a-8qIwyuuDQ5apa0N90LEnLZaU1u0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 22 Dec 2020 14:55:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"e0a341ab-f179-442f-9825-f12b10017768\",\n    \"username\": \"Opal62\",\n    \"createdAt\": \"2020-12-22T14:55:30.000Z\",\n    \"updatedAt\": \"2020-12-22T14:55:30.000Z\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUwYTM0MWFiLWYxNzktNDQyZi05ODI1LWYxMmIxMDAxNzc2OCIsInVzZXJuYW1lIjoiT3BhbDYyIiwicGFzc3dvcmQiOiIkMmIkMTAkZ0t5WElwYk1qdHJ6dDNmSHhlbGhTLkFOVkk1QzlqREo4bWFkQUtXbnptR2RBRS90NWU4MkMiLCJjcmVhdGVkQXQiOiIyMDIwLTEyLTIyVDE0OjU1OjMwLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIwLTEyLTIyVDE0OjU1OjMwLjAwMFoiLCJpYXQiOjE2MDg2NDg5NTUsImV4cCI6MTY0MDE4NDk1NX0.i6r7duvsRYjYIGEUcl9oIDtwpc9EYHzUi7sQycAGG7g\"\n}"
+						}
+					]
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"{{$randomUserName}}\",\n    \"password\" : \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register opal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"{{$randomUserName}}\",\n    \"password\" : \"1234\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8f-BmxLNBJnjHPfkewdmbCn0XEhVWc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 22 Dec 2020 14:55:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"e0a341ab-f179-442f-9825-f12b10017768\",\n    \"username\": \"Opal62\",\n    \"updatedAt\": \"2020-12-22T14:55:30.689Z\",\n    \"createdAt\": \"2020-12-22T14:55:30.689Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "notes",
+			"item": [
+				{
+					"name": "get note",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUwYTM0MWFiLWYxNzktNDQyZi05ODI1LWYxMmIxMDAxNzc2OCIsInVzZXJuYW1lIjoiT3BhbDYyIiwicGFzc3dvcmQiOiIkMmIkMTAkZ0t5WElwYk1qdHJ6dDNmSHhlbGhTLkFOVkk1QzlqREo4bWFkQUtXbnptR2RBRS90NWU4MkMiLCJjcmVhdGVkQXQiOiIyMDIwLTEyLTIyVDE0OjU1OjMwLjAwMFoiLCJ1cGRhdGVkQXQiOiIyMDIwLTEyLTIyVDE0OjU1OjMwLjAwMFoiLCJpYXQiOjE2MDg2NDkyMzIsImV4cCI6MTY0MDE4NTIzMn0.0MvJAW51voQFg69avSzeuRU3YNAfQhwXMJN5Kw0r8Ew",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "id",
+								"value": "9461f184-f90e-46e6-80a4-6fb57578aa4b",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/note/get",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"note",
+								"get"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get note opal no note",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "id",
+										"value": "9461f184-f90e-46e6-80a4-6fb57578aa4b",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/note/get",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"note",
+										"get"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 22 Dec 2020 14:56:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				},
+				{
+					"name": "add note",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlhMTZlMDVkLWRhMjMtNGFhYy05MDhkLWQ3Y2Q1OTM3MTgyYiIsInVzZXJuYW1lIjoiTm92ZWxsYV9Nb3Jpc3NldHRlNjAiLCJwYXNzd29yZCI6IiQyYiQxMCRYU0k2VEtVelRQLlREMTFpZnJVenV1OVVBTlQ5d0VMMkFpTTEwZHZ1ZngwcVpzR0h1U1lZdSIsImNyZWF0ZWRBdCI6IjIwMjAtMTItMjJUMTQ6MjI6MjUuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjAtMTItMjJUMTQ6MjI6MjUuMDAwWiIsImlhdCI6MTYwODY0NzAyNywiZXhwIjoxNjQwMTgzMDI3fQ.e7n893N_s2xKQYZYm9gCM_EZIKBka6c2UxLjqC-4ZPo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"note\" : \"I have to buy a noddles\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/note/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"note",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add note ",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"note\" : \"I have to buy a noddles\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/note/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"note",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "204"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cc-F2RPtB+RCv6ZiWPfKtbclnd2t7I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 22 Dec 2020 14:55:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"cfc2256b-f723-4f1b-a854-59f221667a95\",\n    \"note\": \"I have to buy a noddles\",\n    \"userId\": \"9a16e05d-da23-4aac-908d-d7cd5937182b\",\n    \"updatedAt\": \"2020-12-22T14:55:00.578Z\",\n    \"createdAt\": \"2020-12-22T14:55:00.578Z\"\n}"
+						},
+						{
+							"name": "add note opal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"note\" : \"I have to buy a noddles\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/note/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"note",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "204"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cc-NJ87z/Nbj6L4g5ZktOrjvVNTquY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 22 Dec 2020 14:56:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"184650f8-2c95-40a7-ad19-7ddc2591f8b9\",\n    \"note\": \"I have to buy a noddles\",\n    \"userId\": \"9a16e05d-da23-4aac-908d-d7cd5937182b\",\n    \"updatedAt\": \"2020-12-22T14:56:40.467Z\",\n    \"createdAt\": \"2020-12-22T14:56:40.467Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "edit note",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlhMTZlMDVkLWRhMjMtNGFhYy05MDhkLWQ3Y2Q1OTM3MTgyYiIsInVzZXJuYW1lIjoiTm92ZWxsYV9Nb3Jpc3NldHRlNjAiLCJwYXNzd29yZCI6IiQyYiQxMCRYU0k2VEtVelRQLlREMTFpZnJVenV1OVVBTlQ5d0VMMkFpTTEwZHZ1ZngwcVpzR0h1U1lZdSIsImNyZWF0ZWRBdCI6IjIwMjAtMTItMjJUMTQ6MjI6MjUuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjAtMTItMjJUMTQ6MjI6MjUuMDAwWiIsImlhdCI6MTYwODY0NzAyNywiZXhwIjoxNjQwMTgzMDI3fQ.e7n893N_s2xKQYZYm9gCM_EZIKBka6c2UxLjqC-4ZPo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"note\" : \"I have to buy noddles one packs\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/note/edit?id=184650f8-2c95-40a7-ad19-7ddc2591f8b9",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"note",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "184650f8-2c95-40a7-ad19-7ddc2591f8b9"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "edit note opal",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"note\" : \"I have to buy noddles one packs\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/note/edit?id=184650f8-2c95-40a7-ad19-7ddc2591f8b9",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"note",
+										"edit"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "184650f8-2c95-40a7-ad19-7ddc2591f8b9"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "212"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d4-/pYTF2QUfSn8SFl7XVKoaS5YZ9o\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 22 Dec 2020 14:57:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"184650f8-2c95-40a7-ad19-7ddc2591f8b9\",\n    \"userId\": \"9a16e05d-da23-4aac-908d-d7cd5937182b\",\n    \"note\": \"I have to buy noddles one packs\",\n    \"createdAt\": \"2020-12-22T14:56:40.000Z\",\n    \"updatedAt\": \"2020-12-22T14:57:03.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete note",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjlhMTZlMDVkLWRhMjMtNGFhYy05MDhkLWQ3Y2Q1OTM3MTgyYiIsInVzZXJuYW1lIjoiTm92ZWxsYV9Nb3Jpc3NldHRlNjAiLCJwYXNzd29yZCI6IiQyYiQxMCRYU0k2VEtVelRQLlREMTFpZnJVenV1OVVBTlQ5d0VMMkFpTTEwZHZ1ZngwcVpzR0h1U1lZdSIsImNyZWF0ZWRBdCI6IjIwMjAtMTItMjJUMTQ6MjI6MjUuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjAtMTItMjJUMTQ6MjI6MjUuMDAwWiIsImlhdCI6MTYwODY0NzAyNywiZXhwIjoxNjQwMTgzMDI3fQ.e7n893N_s2xKQYZYm9gCM_EZIKBka6c2UxLjqC-4ZPo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/note/delete?id=184650f8-2c95-40a7-ad19-7ddc2591f8b9",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"note",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "184650f8-2c95-40a7-ad19-7ddc2591f8b9"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete note opal",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/note/delete?id=184650f8-2c95-40a7-ad19-7ddc2591f8b9",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"note",
+										"delete"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "184650f8-2c95-40a7-ad19-7ddc2591f8b9"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3-bXPTTnHNIS019wm53/alKyqlguw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 22 Dec 2020 14:57:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "oke"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
